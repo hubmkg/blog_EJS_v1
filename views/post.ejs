@@ -1,0 +1,13 @@
+
+<!-- this is called an EJS partial, part of EJS layouts -->
+<%- include("partials/header") %>
+
+<%# to be used if no matching post is found %>
+<h2><%= error %></h2>
+
+<!-- app.js passes title & content from JS object post residing in the posts array -->
+  <h3> <%= title %> </h3>
+  <p> <%= content %> </p>
+
+<!-- this is called an EJS partial, part of EJS layouts -->
+<%- include("partials/footer") %>

@@ -1,0 +1,26 @@
+
+<!-- this is called an EJS partial, part of EJS layouts -->
+<%- include("partials/header") %>
+
+<h1>Compose</h1>
+
+<form action="/compose" method="post">
+
+<!-- bootstrap forms -->
+<!-- required: text area cannot be left blank after submit -->
+<!-- autofocus: places mouse cursor in that field when page loaded -->
+  <div class="form-group">
+    <label>Title</label>
+    <textarea class="form-control" rows="1" name="postTitle" required autofocus></textarea>
+    <label>Post</label>
+    <textarea class="form-control" rows="6" name="postBody" required></textarea>
+  </div>
+
+<!-- bootstrap button -->
+<!-- type=submit for post method route in app.js -->
+  <button type="submit" class="btn btn-primary">Publish</button>
+
+</form>
+
+<!-- this is called an EJS partial, part of EJS layouts -->
+<%- include("partials/footer") %>
