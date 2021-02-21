@@ -10,15 +10,15 @@
 
 <%#  step thru array of js objects passed to home.ejs via posts array %>
 <%#  i is the index number for each js object, not used here but could be coded in as %>
-<%#  posts.title[i] & posts.content[i] in the <h3> and <p> elements, see below%>
+<%#  posts[i].title & posts[i].content in the <h3> and <p> elements, see below%>
 <% posts.forEach(function(post,i){ %>
   <%# for debug %>
   <%# console.log(post.title); %>
   <%# console.log(posts); %>
 
   <%# another way to code this %>
-  <%# posts.title[i] %>
-  <%# posts.content[i] %>
+  <%# posts[i].title %>
+  <%# posts[i].content %>
 
   <h3> <%= post.title %> </h3>
   <!-- see styles.css class=homeContent, this limits text area to be displayed -->
