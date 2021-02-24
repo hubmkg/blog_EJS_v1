@@ -27,8 +27,8 @@ const posts = [];
 
 // start of program logic
 
-// run on heroku or locally on post 3000
-// https://blog-ejs-v1.herokuapp.com/
+// run on heroku at: https://blog-ejs-v1.herokuapp.com/
+// or locally on port 3000
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server started on port 3000");
 });
